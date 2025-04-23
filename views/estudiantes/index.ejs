@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estudiantes</title>
+        <link  href="/public/css/style.css">
+    </head>
+    <body>
+        <div>
+            <h3>Lista de Estudiantes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <body>
+                    <% estudiantes.forEach(estudiante => { %>
+                    <tr>
+                        <td><%estudiante.Nombre%></td>
+                        <td><%estudiante.Apellido%></td>
+                        <td><%estudiante.Email%></td>
+
+                    </tr>
+                    <%}) %>
+                </body>
+            </table>
+        </div>
+    </body>
+</html>
